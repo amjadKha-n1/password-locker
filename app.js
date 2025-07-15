@@ -92,8 +92,8 @@ function showDataFunction() {
         let indexCopy = i;
         deleteEntryBtnElement.classList.add('delete-button')
         function deleteEntryFunction() {
-	    passwordsList.splice(indexCopy, 1);
-            localStorage.setItem("passwords", JSON.stringify(passwordsList));
+	    const updatedList = passwordsList.filter((_, idx) => idx !== indexCopy);
+            localStorage.setItem("passwords", JSON.stringify(updatedList));
             showDataFunction();
         }
         
