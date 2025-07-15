@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Locker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Password Locker</h1>
+    </header>
+    <main>
+        <form action="">
+            <section id="main-section">
+                <section id="website-name">
+                    <label for="website">Website: </label>
+                    <input type="text" id="website" placeholder="www.google.com" required>
+                </section>
+                
+                <section id="username-section">
+                    <label for="username">Username: </label>
+                    <input type="text" id="username" placeholder="James Bond" required>        
+                </section>
+                
+                <section id="password-section">
+                    <label for="password">Password: </label>
+                    <input type="password" id="password" minlength="5" maxlength="12" required>
+                    <div id="button">
+                        <button id="generate-password">Generate Password</button>
+                        <button id="show-hide">Show/Hide</button>
+                    </div>
+                </section>
+                <div id="save">
+                    <button>Save</button>
+                    <button id="show-data">Show Data</button>
+                </div>
+    
+            </section>
+            
+        </form>
+    </main>
+    <footer id="footer">
+        <div id="data-display"></div>
+    </footer>
+</body>
+</html>
